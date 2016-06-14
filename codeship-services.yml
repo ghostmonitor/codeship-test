@@ -1,0 +1,13 @@
+app:
+  build:
+    image: busybox
+    dockerfile_path: Dockerfile
+    links:
+       - good_name
+       - bad-name
+bad-name:
+    image: busybox
+
+good_name:
+    image: busybox
+
